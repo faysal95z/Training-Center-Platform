@@ -55,7 +55,7 @@ npm install
 -- Créer la base de données
 CREATE DATABASE training_platform;
 
--- Créer l\'utilisateur MySQL
+-- Créer l'utilisateur MySQL
 CREATE USER 'training_user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON training_platform.* TO 'training_user'@'localhost';
 FLUSH PRIVILEGES;
