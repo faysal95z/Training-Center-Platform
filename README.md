@@ -55,7 +55,7 @@ npm install
 -- Créer la base de données
 CREATE DATABASE training_platform;
 
--- Créer l'utilisateur MySQL
+-- Créer l\'utilisateur MySQL
 CREATE USER 'training_user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON training_platform.* TO 'training_user'@'localhost';
 FLUSH PRIVILEGES;
@@ -135,17 +135,17 @@ project/
   - python-dotenv : Variables d'environnement
 
 ### 📊 Routes de l'application
-(tableau)
 
-Route	Méthode	Description	Accès
-/	GET	Page d'accueil	Public
-/login	GET/POST	Connexion	Public
-/dashboard	GET	Tableau de bord	Connecté
-/tool	GET	Interface chat IA	Connecté
-/prompt	POST	API chat (streaming)	Connecté
-/managingAddUsr	GET/POST	Ajout utilisateurs	Admin
-/managingDelUsr	GET/POST	Suppression utilisateurs	Admin
-/logout	GET	Déconnexion	Connecté
+| Route           | Méthode  | Description              | Accès    |
+| :---:           | :---:    | :---:                    | :---:    |
+| /               | GET      | Page d'accueil           | Public   |
+| /login          | GET/POST | Connexion                | Public   |
+| /dashboard      | GET      | Tableau de bord          | Connecté |
+| /tool           | GET      | Interface chat IA        | Connecté |
+| /prompt         | POST     | API chat (streaming)     | Connecté |
+| /managingAddUsr | GET/POST | Ajout d'utilisateurs     | Admin    |
+| /managingDelUsr | GET/POST | Suppression utilisateurs | Admin    |
+| /logout         | GET      | Deconnexion              | Connecté |
 
 ### 🔒 Sécurité
   - Hashage bcrypt pour les mots de passe
